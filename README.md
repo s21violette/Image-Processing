@@ -1,5 +1,5 @@
 # Image-Processing
-In this C++ application you can set for .bmp image following filters:
+In this C++ application you can set following filters for .bmp image:
 1. Brightness
 2. Contrast
 3. Saturation (in HSV and HSL format)
