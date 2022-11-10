@@ -13,3 +13,5 @@ In this C++ application you can set for .bmp image following filters:
 11. Laplacian filter
 12. Sobel filter
 13. Custom filter where you can set parameters for Kernel filter
+
+![](materials/example.jpg)
