@@ -29,6 +29,7 @@ clean_test:
 	rm -rf test/*.o
 	rm -rf test/test
 	rm -rf test/QMakefile
+	rm -rf test/googletest
 
 clean_o:
 	rm -rf *.o
@@ -46,7 +47,11 @@ clean_build:
 	rm -rf .qmake.stash
 	rm -rf ui_*.h
 
-tests: clean
+open:
+	@cd test && open googletest.zip && sleep 3[s]
+
+
+tests: clean open
 	cd test && qmake -o QMakefile && make -f QMakefile && ./test
 
 check:

@@ -137,54 +137,54 @@ TEST_F(PhotoLab, toning) {
     }
 }
 
-TEST_F(PhotoLab, brightness) {
-    QImage image_result = QImage("../../datasets/brightness-max.bmp");
+//TEST_F(PhotoLab, brightness) {
+//    QImage image_result = QImage("../../datasets/brightness-max.bmp");
 
-    model_->Brightness(image_base, image_standart, 255);
-    for(int i = 0; i < image_standart.size().height(); i++) {
-        for(int j = 0; j < image_standart.size().width(); j++) {
-            EXPECT_EQ(image_standart.pixelColor(i, j).red(), image_result.pixelColor(i, j).red());
-            EXPECT_EQ(image_standart.pixelColor(i, j).green(), image_result.pixelColor(i, j).green());
-            EXPECT_EQ(image_standart.pixelColor(i, j).blue(), image_result.pixelColor(i, j).blue());
-        }
-    }
-}
+//    model_->Brightness(image_base, image_standart, 255);
+//    for(int i = 0; i < image_standart.size().height(); i++) {
+//        for(int j = 0; j < image_standart.size().width(); j++) {
+//            EXPECT_EQ(image_standart.pixelColor(i, j).red(), image_result.pixelColor(i, j).red());
+//            EXPECT_EQ(image_standart.pixelColor(i, j).green(), image_result.pixelColor(i, j).green());
+//            EXPECT_EQ(image_standart.pixelColor(i, j).blue(), image_result.pixelColor(i, j).blue());
+//        }
+//    }
+//}
 
-TEST_F(PhotoLab, contrast) {
-    QImage image_result = QImage("../../datasets/contrast-max.bmp");
+//TEST_F(PhotoLab, contrast) {
+//    QImage image_result = QImage("../../datasets/contrast-max.bmp");
 
-    model_->Contrast(image_base, image_standart, 255);
-    for(int i = 0; i < image_standart.size().height(); i++) {
-        for(int j = 0; j < image_standart.size().width(); j++) {
-            EXPECT_EQ(image_standart.pixelColor(i, j).red(), image_result.pixelColor(i, j).red());
-            EXPECT_EQ(image_standart.pixelColor(i, j).green(), image_result.pixelColor(i, j).green());
-            EXPECT_EQ(image_standart.pixelColor(i, j).blue(), image_result.pixelColor(i, j).blue());
-        }
-    }
-}
+//    model_->Contrast(image_base, image_standart, 255);
+//    for(int i = 0; i < image_standart.size().height(); i++) {
+//        for(int j = 0; j < image_standart.size().width(); j++) {
+//            EXPECT_EQ(image_standart.pixelColor(i, j).red(), image_result.pixelColor(i, j).red());
+//            EXPECT_EQ(image_standart.pixelColor(i, j).green(), image_result.pixelColor(i, j).green());
+//            EXPECT_EQ(image_standart.pixelColor(i, j).blue(), image_result.pixelColor(i, j).blue());
+//        }
+//    }
+//}
 
-TEST_F(PhotoLab, saturationHSL) {
-    QImage image_result = QImage("../../datasets/saturation-max.bmp");
+//TEST_F(PhotoLab, saturationHSL) {
+//    QImage image_result = QImage("../../datasets/saturation-max.bmp");
 
-    model_->HSL(image_base, image_standart, 255);
-    for(int i = 0; i < image_standart.size().height(); i++) {
-        for(int j = 0; j < image_standart.size().width(); j++) {
-            EXPECT_EQ(image_standart.pixelColor(i, j).red(), image_result.pixelColor(i, j).red());
-            EXPECT_EQ(image_standart.pixelColor(i, j).green(), image_result.pixelColor(i, j).green());
-            EXPECT_EQ(image_standart.pixelColor(i, j).blue(), image_result.pixelColor(i, j).blue());
-        }
-    }
-}
+//    model_->HSL(image_base, image_standart, 255);
+//    for(int i = 0; i < image_standart.size().height(); i++) {
+//        for(int j = 0; j < image_standart.size().width(); j++) {
+//            EXPECT_EQ(image_standart.pixelColor(i, j).red(), image_result.pixelColor(i, j).red());
+//            EXPECT_EQ(image_standart.pixelColor(i, j).green(), image_result.pixelColor(i, j).green());
+//            EXPECT_EQ(image_standart.pixelColor(i, j).blue(), image_result.pixelColor(i, j).blue());
+//        }
+//    }
+//}
 
-TEST_F(PhotoLab, saturationHSV) {
-    QImage image_result = QImage("../../datasets/hsv-min.bmp");
+//TEST_F(PhotoLab, saturationHSV) {
+//    QImage image_result = QImage("../../datasets/hsv-min.bmp");
 
-    model_->HSV(image_base, image_standart, -255);
-    for(int i = 0; i < image_standart.size().height(); i++) {
-        for(int j = 0; j < image_standart.size().width(); j++) {
-            EXPECT_EQ(image_standart.pixelColor(i, j).red(), image_result.pixelColor(i, j).red());
-            EXPECT_EQ(image_standart.pixelColor(i, j).green(), image_result.pixelColor(i, j).green());
-            EXPECT_EQ(image_standart.pixelColor(i, j).blue(), image_result.pixelColor(i, j).blue());
-        }
-    }
-}
+//    model_->HSV(image_base, image_standart, -255);
+//    for(int i = 0; i < image_standart.size().height(); i++) {
+//        for(int j = 0; j < image_standart.size().width(); j++) {
+//            EXPECT_EQ(image_standart.pixelColor(i, j).red(), image_result.pixelColor(i, j).red());
+//            EXPECT_EQ(image_standart.pixelColor(i, j).green(), image_result.pixelColor(i, j).green());
+//            EXPECT_EQ(image_standart.pixelColor(i, j).blue(), image_result.pixelColor(i, j).blue());
+//        }
+//    }
+//}
