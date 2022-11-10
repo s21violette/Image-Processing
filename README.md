@@ -2,7 +2,7 @@
 In this C++ application you can set for .bmp image following filters:
 1. Brightness
 2. Contrast
-3. Saturation
+3. Saturation (in HSV and HSL format)
 4. Discoloration
 5. Negative
 6. Toning
